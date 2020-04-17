@@ -17,7 +17,7 @@ namespace RentaVideos
         {
             InitializeComponent();
             usuario = user;
-            string[] alias = {"Cod_Material","Nombre","Descripcion","Categoria","Genero","Autor","Precio","Estado"  };
+            string[] alias = {"Cod_Material","Nombre","Descripcion","Categoria","Genero","Autor","Precio","Cantidad","Estado"  };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
             Color Hotel = Color.FromArgb(253, 254, 254);

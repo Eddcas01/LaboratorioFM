@@ -103,3 +103,12 @@ C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaV
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.MantenimientoCategorias.resources
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaDeDiseno.dll
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.ControlRenta.resources
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaVista.dll
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaModelo.dll
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaControlador.dll
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaVista.pdb
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaVista.dll.config
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaModelo.pdb
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaControlador.pdb
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.Devoluciones.resources
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.InformeVentas.resources
