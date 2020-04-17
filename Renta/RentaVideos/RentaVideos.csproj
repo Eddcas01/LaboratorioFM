@@ -39,7 +39,7 @@
     </Reference>
     <Reference Include="CapaDeDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Desktop\laboratorio\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\laboratorio\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
     </Reference>
     <Reference Include="CapaDiseno">
       <HintPath>..\..\..\..\Desktop\Seguridad\CapaDiseno\bin\Debug\CapaDiseno.dll</HintPath>
@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlRenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlRenta.Designer.cs">
+      <DependentUpon>ControlRenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +77,11 @@
     <Compile Include="MantenimientoBono.Designer.cs">
       <DependentUpon>MantenimientoBono.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenimientoCategoria.cs">
+    <Compile Include="MantenimientoCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenimientoCategoria.Designer.cs">
-      <DependentUpon>MantenimientoCategoria.cs</DependentUpon>
+    <Compile Include="MantenimientoCategorias.Designer.cs">
+      <DependentUpon>MantenimientoCategorias.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenimientoEmpleados.cs">
       <SubType>Form</SubType>
@@ -103,11 +109,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlRenta.resx">
+      <DependentUpon>ControlRenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoBono.resx">
       <DependentUpon>MantenimientoBono.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenimientoCategoria.resx">
-      <DependentUpon>MantenimientoCategoria.cs</DependentUpon>
+    <EmbeddedResource Include="MantenimientoCategorias.resx">
+      <DependentUpon>MantenimientoCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoEmpleados.resx">
       <DependentUpon>MantenimientoEmpleados.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RentaVideos
 {
-    public partial class MantenimientoCategoria : Form
+    public partial class ControlRenta : Form
     {
-        public MantenimientoCategoria()
+        public ControlRenta()
         {
             InitializeComponent();
         }

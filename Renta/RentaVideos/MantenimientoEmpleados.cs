@@ -12,9 +12,28 @@ namespace RentaVideos
 {
     public partial class MantenimientoEmpleados : Form
     {
-        public MantenimientoEmpleados()
+        string usuario = "";
+        public MantenimientoEmpleados(string user)
         {
             InitializeComponent();
+            usuario = user;
+            string[] alias = { "Cod_empleado","Nombres","Apellidos","Estado" };
+            navegador1.asignarAlias(alias);
+            navegador1.asignarSalida(this);
+            Color Hotel = Color.FromArgb(253, 254, 254);
+            navegador1.asignarColorFondo(Hotel);
+            navegador1.asignarColorFuente(Color.Black);
+            navegador1.asignarAyuda("1");
+            navegador1.asignarTabla("empleado");
+            navegador1.asignarNombreForm("");
+        }
+
+        private void Navegador1_Load(object sender, EventArgs e)
+        {
+            string aplicacionActiva = "1";
+            navegador1.ObtenerIdUsuario(usuario);
+            navegador1.botonesYPermisosInicial(usuario, aplicacionActiva);
+            navegador1.ObtenerIdAplicacion(aplicacionActiva);
         }
     }
 }

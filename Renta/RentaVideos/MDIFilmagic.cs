@@ -110,35 +110,35 @@ namespace RentaVideos
 
         private void MantenimientoDeBonosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          MantenimientoBono frm = new MantenimientoBono();
+          MantenimientoBono frm = new MantenimientoBono(lblUsuario.Text);
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void MantenimientoDeCategoriasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MantenimientoCategoria frm = new MantenimientoCategoria();
+            MantenimientoCategorias frm = new MantenimientoCategorias(lblUsuario.Text);
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void MantenimientoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ManteniminetoCliente frm = new ManteniminetoCliente();
+            ManteniminetoCliente frm = new ManteniminetoCliente(lblUsuario.Text);
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void MantenimientoDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MantenimientoEmpleados frm = new MantenimientoEmpleados();
+            MantenimientoEmpleados frm = new MantenimientoEmpleados(lblUsuario.Text);
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void MantenimientoDeMateriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-         MantenimientoMaterial frm = new MantenimientoMaterial();
+         MantenimientoMaterial frm = new MantenimientoMaterial(lblUsuario.Text);
             frm.MdiParent = this;
             frm.Show();
         }
@@ -158,6 +158,11 @@ namespace RentaVideos
             seguridad.lbl_nombreUsuario.Text = lblUsuario.Text;
             seguridad.ShowDialog();
             sn.insertarBitacora(lblUsuario.Text, "Probo la bitacora", "Usuarios");
+        }
+
+        private void RentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -44,6 +44,7 @@
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1113, 806);
             this.navegador1.TabIndex = 14;
+            this.navegador1.Load += new System.EventHandler(this.Navegador1_Load);
             // 
             // tableLayoutPanel1
             // 
