@@ -44,6 +44,7 @@
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1109, 834);
             this.navegador1.TabIndex = 0;
+            this.navegador1.Load += new System.EventHandler(this.Navegador1_Load);
             // 
             // tableLayoutPanel1
             // 
@@ -83,7 +84,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(914, 93);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Mantenimiento Bono";
+            this.label5.Text = "Mantenimiento Clientes";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ManteniminetoCliente

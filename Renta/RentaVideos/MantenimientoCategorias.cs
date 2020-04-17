@@ -10,24 +10,22 @@ using System.Windows.Forms;
 
 namespace RentaVideos
 {
-    public partial class MantenimientoMaterial : Form
+    public partial class MantenimientoCategorias : Form
     {
         string usuario = "";
-        public MantenimientoMaterial(string user)
+        public MantenimientoCategorias(string user)
         {
             InitializeComponent();
             usuario = user;
-            string[] alias = {"Cod_Material","Nombre","Descripcion","Categoria","Genero","Autor","Precio","Estado"  };
+            string[] alias = { "No_categoria","Nombre","Estado", };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
             Color Hotel = Color.FromArgb(253, 254, 254);
             navegador1.asignarColorFondo(Hotel);
             navegador1.asignarColorFuente(Color.Black);
             navegador1.asignarAyuda("1");
-            navegador1.asignarComboConTabla("categoria", "CATEGORIA", 0);
-            navegador1.asignarTabla("material");
+            navegador1.asignarTabla("categoria");
             navegador1.asignarNombreForm("");
-
         }
 
         private void Navegador1_Load(object sender, EventArgs e)

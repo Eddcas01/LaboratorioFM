@@ -1,6 +1,6 @@
 ﻿namespace RentaVideos
 {
-    partial class MantenimientoCategoria
+    partial class MantenimientoCategorias
     {
         /// <summary>
         /// Required designer variable.
@@ -39,11 +39,12 @@
             // navegador1
             // 
             this.navegador1.BackColor = System.Drawing.Color.White;
-            this.navegador1.Location = new System.Drawing.Point(0, 51);
+            this.navegador1.Location = new System.Drawing.Point(0, 57);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1109, 837);
+            this.navegador1.Size = new System.Drawing.Size(1109, 826);
             this.navegador1.TabIndex = 0;
+            this.navegador1.Load += new System.EventHandler(this.Navegador1_Load);
             // 
             // tableLayoutPanel1
             // 
@@ -59,7 +60,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1112, 93);
-            this.tableLayoutPanel1.TabIndex = 13;
+            this.tableLayoutPanel1.TabIndex = 15;
             // 
             // pictureBox1
             // 
@@ -86,16 +87,17 @@
             this.label5.Text = "Mantenimiento Categoria";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MantenimientoCategoria
+            // MantenimientoCategorias
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1112, 848);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.navegador1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "MantenimientoCategoria";
+            this.Name = "MantenimientoCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MantenimientoCategoria";
+            this.Text = "MantenimientoCategorias";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
