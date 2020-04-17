@@ -164,5 +164,12 @@ namespace RentaVideos
         {
 
         }
+
+        private void ControDeRentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ControlRenta frm = new ControlRenta();//empleado
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
