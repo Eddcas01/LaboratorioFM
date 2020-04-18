@@ -78,6 +78,12 @@
     <Compile Include="ControlRenta.Designer.cs">
       <DependentUpon>ControlRenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devolucion.Designer.cs">
+      <DependentUpon>devolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devoluciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ControlRenta.resx">
       <DependentUpon>ControlRenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="devolucion.resx">
+      <DependentUpon>devolucion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devoluciones.resx">
       <DependentUpon>Devoluciones.cs</DependentUpon>

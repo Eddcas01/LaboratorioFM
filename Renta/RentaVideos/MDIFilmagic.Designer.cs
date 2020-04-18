@@ -40,6 +40,7 @@
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controDeRentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informeDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +55,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
-            this.informeDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.devolucionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -127,7 +128,8 @@
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.controDeRentasToolStripMenuItem});
+            this.controDeRentasToolStripMenuItem,
+            this.devolucionesToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.procesosToolStripMenuItem.Text = "Procesos";
@@ -135,7 +137,7 @@
             // controDeRentasToolStripMenuItem
             // 
             this.controDeRentasToolStripMenuItem.Name = "controDeRentasToolStripMenuItem";
-            this.controDeRentasToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.controDeRentasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.controDeRentasToolStripMenuItem.Text = "Contro de Rentas";
             this.controDeRentasToolStripMenuItem.Click += new System.EventHandler(this.ControDeRentasToolStripMenuItem_Click);
             // 
@@ -146,6 +148,13 @@
             this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
             this.informesToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.informesToolStripMenuItem.Text = "Informes";
+            // 
+            // informeDeVentasToolStripMenuItem
+            // 
+            this.informeDeVentasToolStripMenuItem.Name = "informeDeVentasToolStripMenuItem";
+            this.informeDeVentasToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.informeDeVentasToolStripMenuItem.Text = "Informe de Ventas";
+            this.informeDeVentasToolStripMenuItem.Click += new System.EventHandler(this.InformeDeVentasToolStripMenuItem_Click);
             // 
             // toolsMenu
             // 
@@ -243,12 +252,12 @@
             this.lblUsuario.Size = new System.Drawing.Size(18, 20);
             this.lblUsuario.Text = "...";
             // 
-            // informeDeVentasToolStripMenuItem
+            // devolucionesToolStripMenuItem
             // 
-            this.informeDeVentasToolStripMenuItem.Name = "informeDeVentasToolStripMenuItem";
-            this.informeDeVentasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.informeDeVentasToolStripMenuItem.Text = "Informe de Ventas";
-            this.informeDeVentasToolStripMenuItem.Click += new System.EventHandler(this.InformeDeVentasToolStripMenuItem_Click);
+            this.devolucionesToolStripMenuItem.Name = "devolucionesToolStripMenuItem";
+            this.devolucionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.devolucionesToolStripMenuItem.Text = "Devoluciones";
+            this.devolucionesToolStripMenuItem.Click += new System.EventHandler(this.DevolucionesToolStripMenuItem_Click);
             // 
             // MDIFilmagic
             // 
@@ -300,6 +309,7 @@
         private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controDeRentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informeDeVentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem devolucionesToolStripMenuItem;
     }
 }
 

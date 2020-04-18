@@ -351,7 +351,9 @@ namespace RentaVideos
 
         private void Button5_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Guardado Correctamente");
             this.Close();
+
         }
 
         public void total()

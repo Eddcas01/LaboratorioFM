@@ -113,3 +113,4 @@ C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaCo
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.Devoluciones.resources
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.InformeVentas.resources
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\itextsharp.dll
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.devolucion.resources

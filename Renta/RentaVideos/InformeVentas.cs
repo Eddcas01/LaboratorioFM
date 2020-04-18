@@ -25,7 +25,7 @@ namespace RentaVideos
 
         void llenartbl()// al inicializar la tabla de usuarios
         {
-            string sql = "select re.MEMBRESIA, rd.PRECIO_UNIDAD, rd.CANTIDAD , (sum(rd.PRECIO_UNIDAD*rd.CANTIDAD)) as 'Total' from renta_detalle rd INNER JOIN renta_encabezado re on re.ID_ENCABEZADO=rd.ID_ENCABEZADO WHERE re.ESTADO=1 GROUP by re.MEMBRESIA;";
+            string sql = "select re.MEMBRESIA, m.NOMBRE, rd.PRECIO_UNIDAD, rd.CANTIDAD , sum(PRECIO_UNIDAD*CANTIDAD) as 'Total' from renta_detalle rd INNER JOIN renta_encabezado re on re.ID_ENCABEZADO=rd.ID_ENCABEZADO INNER JOIN MATERIAL m on rd.MATERIAL=m.MATERIAL GROUP by rd.ID_DETALLE";
             OdbcCommand command = new OdbcCommand(sql, con.conexion1());
             OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
             DataTable dt = new DataTable();
