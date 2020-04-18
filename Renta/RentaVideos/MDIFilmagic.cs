@@ -171,5 +171,12 @@ namespace RentaVideos
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void InformeDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InformeVentas frm = new InformeVentas();//empleado
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

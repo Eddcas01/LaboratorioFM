@@ -31,12 +31,12 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dgb_productosProceso = new System.Windows.Forms.DataGridView();
+            this.dgb_informe = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgb_productosProceso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgb_informe)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,19 +80,21 @@
             this.button1.Size = new System.Drawing.Size(186, 91);
             this.button1.TabIndex = 15;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // dgb_productosProceso
+            // dgb_informe
             // 
-            this.dgb_productosProceso.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgb_productosProceso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgb_productosProceso.Location = new System.Drawing.Point(0, 95);
-            this.dgb_productosProceso.Name = "dgb_productosProceso";
-            this.dgb_productosProceso.ReadOnly = true;
-            this.dgb_productosProceso.RowHeadersWidth = 51;
-            this.dgb_productosProceso.RowTemplate.Height = 24;
-            this.dgb_productosProceso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgb_productosProceso.Size = new System.Drawing.Size(778, 207);
-            this.dgb_productosProceso.TabIndex = 21;
+            this.dgb_informe.AllowUserToAddRows = false;
+            this.dgb_informe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgb_informe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgb_informe.Location = new System.Drawing.Point(0, 95);
+            this.dgb_informe.Name = "dgb_informe";
+            this.dgb_informe.ReadOnly = true;
+            this.dgb_informe.RowHeadersWidth = 51;
+            this.dgb_informe.RowTemplate.Height = 24;
+            this.dgb_informe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgb_informe.Size = new System.Drawing.Size(778, 207);
+            this.dgb_informe.TabIndex = 21;
             // 
             // tableLayoutPanel1
             // 
@@ -140,7 +142,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(988, 314);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.dgb_productosProceso);
+            this.Controls.Add(this.dgb_informe);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -148,7 +150,7 @@
             this.Text = "InformeVentas";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgb_productosProceso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgb_informe)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -161,7 +163,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dgb_productosProceso;
+        private System.Windows.Forms.DataGridView dgb_informe;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;

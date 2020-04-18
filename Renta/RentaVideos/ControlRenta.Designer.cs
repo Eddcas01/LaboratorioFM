@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.grb_encabezado = new System.Windows.Forms.GroupBox();
             this.combo2 = new CapaVista.Combo();
@@ -37,14 +38,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_membre = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grb_detalle = new System.Windows.Forms.GroupBox();
             this.txtcant = new System.Windows.Forms.TextBox();
             this.combo1 = new CapaVista.Combo();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_precio = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,20 +58,13 @@
             this.dgb_renta = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.lbltotal = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grb_encabezado.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.grb_detalle.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgb_renta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -83,6 +82,18 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(956, 150);
             this.tableLayoutPanel1.TabIndex = 11;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.pictureBox1.BackgroundImage = global::RentaVideos.Properties.Resources.clapperboard;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(794, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(159, 144);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -118,7 +129,7 @@
             // combo2
             // 
             this.combo2.Location = new System.Drawing.Point(194, 112);
-            this.combo2.Margin = new System.Windows.Forms.Padding(21, 21, 21, 21);
+            this.combo2.Margin = new System.Windows.Forms.Padding(21);
             this.combo2.Name = "combo2";
             this.combo2.Size = new System.Drawing.Size(161, 26);
             this.combo2.TabIndex = 24;
@@ -171,6 +182,22 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(94, 119);
             this.tableLayoutPanel3.TabIndex = 15;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.button1.BackgroundImage = global::RentaVideos.Properties.Resources._157_paper_plane;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(3, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 38);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -195,7 +222,6 @@
             // grb_detalle
             // 
             this.grb_detalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.grb_detalle.Controls.Add(this.button2);
             this.grb_detalle.Controls.Add(this.txtcant);
             this.grb_detalle.Controls.Add(this.combo1);
             this.grb_detalle.Controls.Add(this.tableLayoutPanel2);
@@ -221,7 +247,7 @@
             // combo1
             // 
             this.combo1.Location = new System.Drawing.Point(150, 54);
-            this.combo1.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.combo1.Margin = new System.Windows.Forms.Padding(15);
             this.combo1.Name = "combo1";
             this.combo1.Size = new System.Drawing.Size(203, 41);
             this.combo1.TabIndex = 20;
@@ -241,13 +267,40 @@
             this.tableLayoutPanel2.Controls.Add(this.label9, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.button5, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.button3, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(515, 55);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(515, 12);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(396, 100);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(396, 143);
             this.tableLayoutPanel2.TabIndex = 19;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label12.Location = new System.Drawing.Point(267, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(126, 71);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Guardar Registro de Rentar";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.button4.BackgroundImage = global::RentaVideos.Properties.Resources._243_exit;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(135, 74);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(125, 40);
+            this.button4.TabIndex = 12;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // label8
             // 
@@ -255,7 +308,7 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Location = new System.Drawing.Point(3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 50);
+            this.label8.Size = new System.Drawing.Size(126, 71);
             this.label8.TabIndex = 15;
             this.label8.Text = "Agregar";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,12 +317,44 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(134, 0);
+            this.label9.Location = new System.Drawing.Point(135, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 50);
+            this.label9.Size = new System.Drawing.Size(126, 71);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Eliminar ";
+            this.label9.Text = "Devolucion";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.button5.BackgroundImage = global::RentaVideos.Properties.Resources._227_outbox;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(267, 74);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(126, 40);
+            this.button5.TabIndex = 17;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.button3.BackgroundImage = global::RentaVideos.Properties.Resources._144_add_file;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(3, 74);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 40);
+            this.button3.TabIndex = 11;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // label6
             // 
@@ -339,108 +424,6 @@
             this.lbltotal.TabIndex = 16;
             this.lbltotal.Text = "...";
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
-            this.button4.BackgroundImage = global::RentaVideos.Properties.Resources._243_exit;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(134, 53);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 40);
-            this.button4.TabIndex = 12;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
-            this.button3.BackgroundImage = global::RentaVideos.Properties.Resources._144_add_file;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(3, 53);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 40);
-            this.button3.TabIndex = 11;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
-            this.button1.BackgroundImage = global::RentaVideos.Properties.Resources._157_paper_plane;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(3, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 38);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
-            this.pictureBox1.BackgroundImage = global::RentaVideos.Properties.Resources.clapperboard;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(794, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 144);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(304, 91);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(27, 24);
-            this.button2.TabIndex = 22;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
-            this.button5.BackgroundImage = global::RentaVideos.Properties.Resources._227_outbox;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(60)))), ((int)(((byte)(192)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(265, 53);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 40);
-            this.button5.TabIndex = 17;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(265, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 50);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Rentar";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // ControlRenta
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -459,6 +442,7 @@
             this.Text = "ControlRenta";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grb_encabezado.ResumeLayout(false);
             this.grb_encabezado.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -468,7 +452,6 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgb_renta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,7 +487,6 @@
         private CapaVista.Combo combo2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtcant;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button5;
     }

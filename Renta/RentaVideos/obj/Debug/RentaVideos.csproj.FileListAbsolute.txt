@@ -112,3 +112,4 @@ C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaMo
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\CapaControlador.pdb
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.Devoluciones.resources
 C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\obj\Debug\RentaVideos.InformeVentas.resources
+C:\Users\edgar\Documents\GitHub\LaboratorioFM\Renta\RentaVideos\bin\Debug\itextsharp.dll
