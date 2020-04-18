@@ -178,5 +178,13 @@ namespace RentaVideos
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void DevolucionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            devolucion frm = new devolucion();//empleado
+            frm.MdiParent = this;
+            frm.Show();
+
+        }
     }
 }
