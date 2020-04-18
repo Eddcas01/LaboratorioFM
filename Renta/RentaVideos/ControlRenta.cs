@@ -287,13 +287,20 @@ namespace RentaVideos
             string material = idmelo();
             string prec = precio(material);
             lbl_precio.Text = prec;
+            if (lbl_precio.Text != "t")
+            {
+                //INSERT INTO `renta_detalle` (`ID_DETALLE`, `ID_ENCABEZADO`, `MATERIAL`, `PRECIO_UNIDAD`, `CANTIDAD`, `ESTADO`) VALUES (NULL, '1', '3', '10', '1', '1');
+                string sql = "iNSERT INTO renta_detalle ( ID_ENCABEZADO, MATERIAL,PRECIO_UNIDAD,CANTIDAD) VALUES (" + idde + "," + material + "," + prec + "," + txtcant.Text + ");";
+                OdbcCommand command = new OdbcCommand(sql, con.conexion1());
+                OdbcDataReader reader = command.ExecuteReader();
+                llenartbl();
+                total();
+            }
 
-            //INSERT INTO `renta_detalle` (`ID_DETALLE`, `ID_ENCABEZADO`, `MATERIAL`, `PRECIO_UNIDAD`, `CANTIDAD`, `ESTADO`) VALUES (NULL, '1', '3', '10', '1', '1');
-            string sql = "iNSERT INTO renta_detalle ( ID_ENCABEZADO, MATERIAL,PRECIO_UNIDAD,CANTIDAD) VALUES ("+idde+","+material+","+prec+","+txtcant.Text+");";
-            OdbcCommand command = new OdbcCommand(sql, con.conexion1());
-            OdbcDataReader reader = command.ExecuteReader();
-            llenartbl();
-            total();
+            else {
+                MessageBox.Show("Profavor cargue el precio");
+
+            }
         }
 
 
@@ -324,9 +331,7 @@ namespace RentaVideos
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            string material = idmelo();
-            string prec = precio(material);
-            lbl_precio.Text = prec;
+         
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -340,6 +345,7 @@ namespace RentaVideos
                 OdbcCommand command = new OdbcCommand(sql, con.conexion1());
                 OdbcDataReader reader = command.ExecuteReader();
                 llenartbl();
+                total();
             }
         }
 
@@ -350,7 +356,7 @@ namespace RentaVideos
 
         public void total()
         {
-            string sql = "select sum(PRECIO_UNIDAD*CANTIDAD) from renta_detalle rd INNER JOIN renta_encabezado re on re.ID_ENCABEZADO=rd.ID_ENCABEZADO WHERE re.ESTADO=1 and  re.MEMBRESIA="+txt_membre.Text+";";
+            string sql = "select sum(PRECIO_UNIDAD*CANTIDAD) from renta_detalle rd INNER JOIN renta_encabezado re on re.ID_ENCABEZADO=rd.ID_ENCABEZADO WHERE rd.ESTADO=1 and  re.MEMBRESIA="+txt_membre.Text+";";
             OdbcCommand command = new OdbcCommand(sql, con.conexion1());
             OdbcDataReader reader = command.ExecuteReader();
 
